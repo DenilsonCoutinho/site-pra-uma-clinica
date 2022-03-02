@@ -1,0 +1,587 @@
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    background:white;
+    box-shadow: 0 0 1em rgb(0, 0, 0);
+    position:fixed;
+    z-index: 99;
+    
+}
+header .cuidados{
+    
+     background:#325288
+}
+header .cuidados h3{
+    font-family:sans-serif;
+    text-align:center;
+    font-size:1.3em;
+    color:aliceblue;
+}
+header .in-header{
+    max-width:1200px;
+    height:10vh;
+    margin:0 auto;
+    display:flex;
+    justify-content:center;
+   align-items: center;
+   box-align: center;
+    transition:all 200ms ease-in-out;
+}
+header .in-header .logo{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+ }
+ header .in-header .logo img{
+    
+ }
+ header nav{
+     display:flex;
+ }
+ header nav {
+    display:flex;
+}
+header .menu-icon{
+    
+    display: none;
+}
+
+header nav ul{
+    list-style-type: none;
+    display:flex;
+}
+
+header nav ul li{
+    padding:10px;
+    
+}
+header nav ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+  
+}
+header nav ul li a:hover{
+    color:black;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #6659cc;
+}
+.progress{
+    
+    background: transparent;
+    animation: progress-bar;
+    animation-iteration-count: infinite ;
+    animation-duration: 5s;
+    box-sizing: border-box;
+    height:6px;
+}
+.progress-bar{
+    background-color: #325288;
+    height:6px;
+    width:100px;
+}
+
+main{
+    max-width: 100%;
+   }
+   main .background-container{
+    background-image: linear-gradient(to right bottom, #4469a1, #6a85b1, #8fa1c1, #b3bed1, #d9dce1);
+
+   }
+
+main .container{
+    max-width:1200px;
+    margin: 0 auto;
+   display: flex;
+    justify-content: space-between;
+    
+}
+main .container h1{
+    text-align: center;
+    max-width: 590px;
+    font-size:4rem;
+    font-family: sans-serif;
+    border-bottom: 1px solid transparent;
+    position: relative;
+}
+
+
+
+main .container .img{
+    margin-top:22px;
+
+}
+main .container .img svg{
+   width:600px ;
+}
+main .container .button-h1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main .container .btn{
+    background:#4b46c2;
+}
+main .hospital{
+    max-width:1200px;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+main .hospital h1{
+    font-family:sans-serif;
+    margin-left: 15px;
+}
+main .hospital p{
+    max-width:500px;
+    font-family:sans-serif;
+    margin-left: 15px;
+}
+main .background-specialty{
+    background:#F05454;
+    box-shadow: 0 0 1em rgb(19, 18, 18);
+   }
+main .specialty{
+    max-width:1050px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 60px;
+    
+    
+} 
+main #borda{
+    position: relative;
+    animation:especilidades1;
+    
+}
+main .icon-specialty{
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+  
+}
+main .specialty h2{
+    text-align: center;
+}
+main .specialty img{
+
+
+    margin: 70px;
+}
+main .specialty .boxshadow {
+    
+    position: relative;
+    margin: 10px;
+    animation: especilidades1;
+    animation-iteration-count: infinite ;
+    
+
+}
+
+
+
+
+main .specialty .boxshadow h3{
+    text-align: center;
+    width: 198px;
+    height: 33px
+}
+
+
+main .exames {
+    max-width:1200px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 20px;
+  
+}
+main .exames .type-exame{
+ text-align: center;
+    
+}
+main .exames .type-exame .type-exame-img{
+    display: flex;
+    
+    
+    
+}
+
+main .exames .type-exame-img .img-exame{
+  padding: 20px;
+}
+main .after-type-exame{
+    background-image: url(imgs/exame.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 600px;
+}
+
+main .duvidas  {
+    max-width:1000px;
+    box-shadow: 0 0 1em rgb(0, 0, 0);
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 18px;
+}
+main .duvidas  h1{
+    text-align: center;
+}
+main .duvidas details {
+  
+    max-width:800px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+    margin:30px;
+    margin: 0 auto;
+    margin: 20px;
+    padding: 18px;
+    text-align: center;
+}
+main .duvidas details summary{
+    margin: 0 auto;
+    font-size: 1.3rem;
+    font-family: sans-serif;
+}
+main .duvidas p{
+    margin-left: 20px;
+    text-align: left;
+     }
+main .form{
+     max-width:800px;
+     margin: 0 auto;
+     margin-top: 40px;
+     
+}
+main .form input{
+    padding-left:10px;
+ 
+}
+main .form h2{
+    text-align: center;
+}
+
+main .form .inputs{
+    box-shadow: 0 0 1em rgb(0, 0, 0);
+    margin: 0 auto;
+     padding-bottom: 20px;
+    text-align: center;
+    background:#3252885e;
+    border-radius: 4px;
+    width: 650px;
+   border-radius: 4px;
+}
+main .form .inputs .nome-email{
+    display: flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items: center;
+     padding-top: 60px;
+ }
+ main .form .inputs .nome-email input{
+    
+      margin:10px;
+     width: 500px;
+     height: 50px;
+     border-width: low;
+     border-style: solid;
+     border-radius: 4px;
+     outline: none;
+
+ }
+ main .form .inputs .tell-whats{
+     display: flex;
+     justify-content: center;
+ }
+ main .form .inputs .tell-whats input{
+    margin:10px;
+   width: 238px;
+   height: 50px;
+   border-width: low;
+   border-style: solid;
+   border-radius: 2px;
+   outline: none;
+   border-radius: 5px;
+}
+main .form .inputs .cid-est input{
+    position: relative;
+    right: 10px;
+   margin:10px;
+   width: 358px;
+   height: 50px;
+   border-width: low;
+   border-style: solid;
+   border-radius: 5px;
+   outline: none;
+
+}
+main .form .inputs .cid-est select{
+    height: 40px;
+    width: 68px;
+    text-align:center;
+    border-radius: 5px;
+    margin-bottom: 90px;
+}
+main .form .inputs .cid-est p{
+    position: relative;
+    top: 19px;
+}
+main .form .inputs .textarea-button {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction:column;
+}
+main .form .inputs .textarea-button textarea {
+    width:500px;
+    height:200px;
+    max-width: 500px;
+    max-height: 200px;
+    text-align: center;
+}
+main .form .inputs .textarea-button button {
+    margin-top: 10px;
+    outline: none;
+    width: 300px;
+    height: 50px;
+    border-radius: 4px;
+    background:#F5F5F5;
+    
+}
+
+main .background-rodape{
+    width: 100%;
+    background: #151D3B;
+}
+
+main .rodape{
+    margin-top: 20px;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+main .rodape input{
+    border-width: low;
+   border-style: solid;
+   border-radius: 2px;
+   outline: none;
+
+}
+
+main .geral,.solucoes, .atendimento,.newsletter{
+    margin: 100px;
+    text-align: left;
+    color:aliceblue;
+}
+main .newsletter input{
+ text-align: center;
+}
+main .geral,.solucoes, .atendimento,a{
+    color:aliceblue;
+    text-decoration:none;
+}
+@media (max-width: 1521px){
+    .rodape h2,h3{
+        font-size:1rem;
+    
+    }
+    main .geral,.solucoes, .atendimento,.newsletter{
+        margin: 10px;
+        text-align: center;
+    }
+}
+@media (max-width: 1281px){
+    header .logo{
+        margin-left: 10px;
+    }
+  
+   main .container{       
+       position: relative;
+       top: 50px;
+       padding-bottom: 80px;
+       flex-direction: column-reverse;
+   }
+   main .container .img svg{
+      width:90%;
+ }
+ main .hospital{
+     flex-direction: column-reverse;
+     
+ }
+ main .hospital .carousel-caption{
+    text-align: center;
+}
+ main .hospital .carousel img{
+    margin: 0 auto;
+}
+ main .hospital .texte-side{
+     margin: 0 auto;
+ }
+}
+@media (max-width: 964px){
+    main .container {
+        
+        padding-bottom: 80px;
+        
+    }
+    main .container h1 {
+        font-size: 3.3rem;
+    }
+    main .duvidas{
+        max-width:100%;
+    }
+    
+    
+    header .menu-icon{
+        display:block;
+        margin-left:50px ;
+        
+    }
+    header ul{
+        width: 100%;
+        height: calc(100vh - 80px);
+        background-color: #151d3b;
+        position:fixed;
+        top: 130px;
+        left: -100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition:all 200ms ease-out;
+    }
+    header .navbar .active{
+        left:0;
+    }
+    header .navbar ul li{
+        padding: 20px;
+        
+    }
+    header .navbar ul li a{
+        color:White;
+    }
+    header nav .menu-icon img{
+    margin-right: 30px;
+    }
+    header .cuidados h3{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 709px){
+    main .form  {
+        max-width: 100%;
+    }
+    main .form .inputs {
+        max-width: 100%;
+    }
+    main .form .inputs .nome-email input{
+       max-width: 90%;
+}
+ main .form .inputs .tell-whats {
+   max-width: 100%;
+}
+main .form .inputs .tell-whats .whats input {
+    width: 80%;
+}
+main .form .inputs .tell-whats .tell input {
+    width: 80%;
+}
+main .form .inputs .cid-est {
+    max-width: 100%;
+}
+main .form .inputs .cid-est input{
+    width: 80%;
+ }
+main .form .inputs .textarea-button textarea{
+    max-width: 80%;
+    height: 100px;
+ }
+ main .form .inputs .textarea-button button{
+    width: 80%;
+ }
+}
+@media (max-width: 489px){
+    header .cuidados h3{
+        font-size: 0.7rem;
+    }
+    header nav{
+        position: relative;
+        left: 20px;
+    }
+    main .button-h1{
+        
+            position: relative;
+            top: -190px;
+        
+    }
+    main .container{       
+        position: relative;
+        top: -50px;
+        padding-bottom: 80px;
+        flex-direction: column-reverse;
+        
+    }
+}
+@media (max-width: 398px){
+ header .logo h1{
+    font-size: 1rem;
+ }
+ main .container{       
+    position: relative;
+    top: -150px;
+    padding-bottom: 80px;
+    flex-direction: column-reverse;
+    
+}
+main .container{   
+    position: relative;
+    top: 200px;
+    height: 95vh;
+}
+header #header .logo a img ,.menu-icon  img{
+    width: 30px;
+}
+header{
+    max-width: 100%;
+}
+main .container .button-h1 h1{
+    font-size: 3rem;
+}
+header .cuidados h3{
+    font-size: 0.5rem;
+}
+main .exames .type-exame .type-exame-img .img-exame img{
+    width: 40px;
+}
+main .exames .type-exame .type-exame-img .img-exame{
+    padding: 5px;
+}
+main .exames .type-exame .type-exame-img .img-exame h4{
+    font-size: 0.6rem;
+}
+}
+
+@keyframes progress-bar{
+    from {
+        width: 0;
+    }to {
+        width: 100%;
+    }
+}
+
+
