@@ -138,15 +138,24 @@ main .hospital{
     margin-top: 40px;
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+}
+main .hospital img{
+  margin: 0 auto;
+  
 }
 main .hospital h1{
     font-family:sans-serif;
     margin-left: 15px;
+    text-align:center;
 }
 main .hospital p{
     max-width:500px;
     font-family:sans-serif;
-    margin-left: 15px;
+      margin-left: 15px;
+    margin: 0 auto;
+  
+    
 }
 main .background-specialty{
     background:#F05454;
